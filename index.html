@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NFT Landing Page</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -36,8 +41,7 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-between" id="nav">
-          <!-- Navigation links -->
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav me-auto text-center text-lg-start">
             <li class="nav-item mx-2">
               <a class="nav-link" href="#">How it Works</a>
             </li>
@@ -53,11 +57,12 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="#">About</a>
             </li>
-            <li class="nav-item mx-2"><a class="nav-link" href="#">Blog</a></li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
           </ul>
 
-          <!-- Right-side buttons -->
-          <div class="d-flex">
+          <div class="d-flex ms-auto mt-3 mt-lg-0">
             <a href="#" class="btn btn-link text-success me-2">Log In</a>
             <a href="#" class="btn btn-success">Sign Up</a>
           </div>
@@ -66,18 +71,9 @@
     </nav>
 
     <!-- Hero Section -->
-    <section
-      class="hero-section py-5"
-      style="
-        position: relative;
-        min-height: 89vh;
-        background: url('img/2.png') no-repeat right center;
-        background-size: contain;
-      "
-    >
+    <section class="hero-section py-5">
       <div class="container">
         <div class="row align-items-center">
-          <!-- Left Text Content -->
           <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
             <h1 class="display-4 fw-bold">
               List <span class="text-success">NFT</span><br />
@@ -99,7 +95,6 @@
             <div
               class="d-flex flex-wrap gap-5 mt-5 justify-content-center justify-content-lg-start"
             >
-              <!-- Feature 1 -->
               <div class="d-flex align-items-start gap-2">
                 <img
                   src="https://img.icons8.com/ios-filled/24/00ff99/lock--v1.png"
@@ -111,7 +106,6 @@
                 </div>
               </div>
 
-              <!-- Feature 2 -->
               <div class="d-flex align-items-start gap-2">
                 <img
                   src="https://img.icons8.com/ios-filled/24/00ff99/like--v1.png"
@@ -123,7 +117,6 @@
                 </div>
               </div>
 
-              <!-- Feature 3 -->
               <div class="d-flex align-items-start gap-2">
                 <img
                   src="https://img.icons8.com/ios-filled/24/00ff99/time--v1.png"
@@ -139,33 +132,28 @@
         </div>
 
         <!-- Overlay Card -->
-        <div class="croc-card d-flex m-3 align-items-center gap-3">
-          <!-- Text Content -->
-          <div>
-            <h5 class="mb-1 text-white">Cool Croc</h5>
-            <p class="mb-2 small text-white-50">
-              Majestic crocodile, capturing the raw power
-            </p>
-            <div class="d-flex align-items-center">
-              <button class="btn btn-success btn-sm me-2">Buy now</button>
-              <span class="small text-white">$Ξ 4.8</span>
+        <div class="row mt-4">
+          <div class="col-md-4 col-lg-3">
+            <div
+              class="croc-card d-flex align-items-center gap-3 p-3 rounded bg-dark text-white"
+            >
+              <div style="margin-right: 70px">
+                <h5 class="mb-1">Cool Croc</h5>
+                <p class="mb-2 small text-white-50">
+                  Majestic crocodile, capturing the raw power
+                </p>
+                <div class="d-flex align-items-center">
+                  <button class="btn btn-success btn-sm me-2">Buy now</button>
+                  <span class="small">$Ξ 4.8</span>
+                </div>
+              </div>
             </div>
-          </div>
-
-          <!-- Thumbnail Image -->
-          <div>
-            <img
-              src="img/2.png"
-              alt="Cool Croc"
-              class="img-fluid rounded"
-              style="width: 80px; height: 80px; object-fit: cover"
-            />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3-Column Section -->
+    <!-- Features Section -->
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row text-center">
@@ -204,6 +192,7 @@
       </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
